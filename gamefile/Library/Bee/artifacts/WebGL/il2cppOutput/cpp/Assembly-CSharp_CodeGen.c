@@ -1,0 +1,83 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void CardManager_Start_m6F8A2538218756D945A3D7D32328AB9F7B4BBA75 (void);
+extern void CardManager_Update_m34F64B9369399278E8A509ADD8099FB68D28353D (void);
+extern void CardManager_OnCollisionEnter2D_m53B294AAAFEEEEF93C78DFE1F253F26946A3F265 (void);
+extern void CardManager_OnTriggerStay2D_m9DA7F72B8DFC64843C8D739A4744805612A951EF (void);
+extern void CardManager_OnTriggerExit2D_m3EFBB31DA41E678681E07BBC53CBA5F80A2711E7 (void);
+extern void CardManager__ctor_mEAF4B560368DF13EA257B55B8074393E59B696CD (void);
+extern void GameMaster_Start_mCB33A7C2B1975F82661393EA7162B040C5DA1F34 (void);
+extern void GameMaster_NewCard_mAE769035E18BD6A8E52CFCEABBF3BFA5FBAC0EC6 (void);
+extern void GameMaster_Update_mCEA6EE822A31AF5F8FF9F4150C546CCB78E08451 (void);
+extern void GameMaster_GameOver_m82BDA9B7E317F926439AD6A3B5E7FF5D15DBF0CE (void);
+extern void GameMaster_OnRetry_mE7C1C44B3E77F629945D3332812ED7BB0CA75BF7 (void);
+extern void GameMaster__ctor_m129F9606E5D75C368420BE6B10EE572EE25E7780 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[14] = 
+{
+	CardManager_Start_m6F8A2538218756D945A3D7D32328AB9F7B4BBA75,
+	CardManager_Update_m34F64B9369399278E8A509ADD8099FB68D28353D,
+	CardManager_OnCollisionEnter2D_m53B294AAAFEEEEF93C78DFE1F253F26946A3F265,
+	CardManager_OnTriggerStay2D_m9DA7F72B8DFC64843C8D739A4744805612A951EF,
+	CardManager_OnTriggerExit2D_m3EFBB31DA41E678681E07BBC53CBA5F80A2711E7,
+	CardManager__ctor_mEAF4B560368DF13EA257B55B8074393E59B696CD,
+	GameMaster_Start_mCB33A7C2B1975F82661393EA7162B040C5DA1F34,
+	GameMaster_NewCard_mAE769035E18BD6A8E52CFCEABBF3BFA5FBAC0EC6,
+	GameMaster_Update_mCEA6EE822A31AF5F8FF9F4150C546CCB78E08451,
+	GameMaster_GameOver_m82BDA9B7E317F926439AD6A3B5E7FF5D15DBF0CE,
+	GameMaster_OnRetry_mE7C1C44B3E77F629945D3332812ED7BB0CA75BF7,
+	GameMaster__ctor_m129F9606E5D75C368420BE6B10EE572EE25E7780,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[14] = 
+{
+	6308,
+	6308,
+	4950,
+	4950,
+	4950,
+	6308,
+	6308,
+	6308,
+	6308,
+	6308,
+	6308,
+	6308,
+	9992,
+	6308,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	14,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
