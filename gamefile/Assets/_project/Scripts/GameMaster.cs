@@ -23,12 +23,25 @@ public class GameMaster : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     
     [SerializeField] private TextMeshProUGUI scoreText;
+    
+    [SerializeField]
+    private AudioClip dropSound;
+    [SerializeField]
+    private AudioClip retrySound;
+    
+    private AudioSource audioSource;
 
     private void Start()
     {
         NewCard();
         gameOverUI.SetActive(false);
         Time.timeScale = 1;
+        
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("DropSound is null");
+        }
     }
 
     private void NewCard()
@@ -46,6 +59,7 @@ public class GameMaster : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 isDroping = true;
+                audioSource.PlayOneShot(dropSound);
                 _card.GetComponent<Rigidbody2D>().gravityScale = 1;
                 _card.GetComponent<Rigidbody2D>().simulated = true;
                 _card.GetComponent<CardManager>().isDropped = true;
@@ -71,6 +85,7 @@ public class GameMaster : MonoBehaviour
 
     public void OnRetry()
     {
+        audioSource.PlayOneShot(retrySound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

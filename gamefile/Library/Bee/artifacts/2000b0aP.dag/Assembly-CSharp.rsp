@@ -306,8 +306,8 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/unityroom.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/CardManager.cs"
-"Assets/Scripts/GameMaster.cs"
+"Assets/_project/Scripts/CardManager.cs"
+"Assets/_project/Scripts/GameMaster.cs"
 -langversion:9.0
 
 /deterministic

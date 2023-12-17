@@ -9,11 +9,13 @@ public class CardManager : MonoBehaviour
     
     public GameObject evolveCard;
 
-    private float gameOverTimer = 1f;
+    private float gameOverTimer = 2f;
 
     public int point = 10;
 
     private GameMaster gameMaster;
+    
+    private Animator damageIndicator;
 
     private void Start()
     {
@@ -21,6 +23,12 @@ public class CardManager : MonoBehaviour
         if (gameMaster == null)
         {
             Debug.LogError("GameMaster is null");
+        }
+        
+        damageIndicator = GameObject.Find("DamageIndicator").GetComponent<Animator>();
+        if (damageIndicator == null)
+        {
+            Debug.LogError("DamageIndicator is null");
         }
     }
     
@@ -68,6 +76,10 @@ public class CardManager : MonoBehaviour
         if (other.gameObject.CompareTag("Line"))
         {
             gameOverTimer -= Time.deltaTime;
+            if (gameOverTimer < 1.8f)
+            {
+                damageIndicator.SetBool("isDamage", true);
+            }
             if (gameOverTimer <= 0)
             {
                 gameMaster.GameOver();
@@ -80,6 +92,11 @@ public class CardManager : MonoBehaviour
         if (other.gameObject.CompareTag("Line"))
         {
             gameOverTimer = 3f;
+            if (damageIndicator == null)
+            {
+                return;
+            }
+            damageIndicator.SetBool("isDamage", false);
         }
     }
 }

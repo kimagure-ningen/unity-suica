@@ -5,14 +5,26 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -20,6 +32,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -36,21 +54,23 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -62,8 +82,18 @@
             "icon": null
           },
           {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SampleClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/_project/Scenes/GameScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           }
@@ -87,7 +117,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -125,7 +155,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -139,7 +169,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -165,7 +195,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -191,7 +221,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -205,7 +235,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -231,7 +261,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -245,7 +275,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -253,7 +283,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -285,7 +315,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -299,7 +329,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -313,7 +343,7 @@
           {
             "name": "Renderer",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -333,7 +363,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -359,7 +389,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -373,7 +403,7 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -393,7 +423,7 @@
           {
             "name": "Texture",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -401,7 +431,7 @@
           {
             "name": "Texture2D",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -485,12 +515,6 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
-            "name": "Required by SpriteShape Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.spriteshape"
-          },
-          {
             "name": "Required by Subsystems Module",
             "scenes": [],
             "dependencyType": 2,
@@ -545,6 +569,12 @@
             "icon": "package/com.unity.modules.vfx"
           },
           {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          },
+          {
             "name": "Required by WebGL Module",
             "scenes": [],
             "dependencyType": 2,
@@ -572,6 +602,12 @@
       {
         "name": "Input",
         "dependencies": [
+          {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          },
           {
             "name": "Required by XR Module",
             "scenes": [],
@@ -625,6 +661,12 @@
             "icon": "package/com.unity.modules.uielements"
           },
           {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -648,6 +690,12 @@
             "icon": null
           },
           {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -661,7 +709,7 @@
           {
             "name": "BoxCollider2D",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -673,27 +721,15 @@
             "icon": null
           },
           {
-            "name": "EdgeCollider2D",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
           },
           {
-            "name": "PolygonCollider2D",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "Rigidbody2D",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -775,12 +811,6 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
-            "name": "Required by SpriteShape Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.spriteshape"
-          },
-          {
             "name": "Required by Subsystems Module",
             "scenes": [],
             "dependencyType": 2,
@@ -835,6 +865,12 @@
             "icon": "package/com.unity.modules.vfx"
           },
           {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          },
+          {
             "name": "Required by WebGL Module",
             "scenes": [],
             "dependencyType": 2,
@@ -845,17 +881,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.xr"
-          }
-        ]
-      },
-      {
-        "name": "SpriteShape",
-        "dependencies": [
-          {
-            "name": "SpriteShapeRenderer",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
           }
         ]
       },
@@ -921,7 +946,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -964,7 +989,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -978,7 +1003,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/GameScene.unity"
+              "Assets/_project/Scenes/GameScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1029,6 +1054,10 @@
         ]
       },
       {
+        "name": "VR",
+        "dependencies": []
+      },
+      {
         "name": "WebGL",
         "dependencies": [
           {
@@ -1041,7 +1070,14 @@
       },
       {
         "name": "XR",
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "Required by VR Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.vr"
+          }
+        ]
       }
     ]
   }

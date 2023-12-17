@@ -18,14 +18,11 @@ struct ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7;
 struct Rigidbody2DU5BU5D_tC196E4DEEA396B4A08BFAE8A94A45FD14403C9CF;
-struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52;
 struct Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
-struct EdgeCollider2D_tB7A39F2B1345894C40577A62FD62244702DE3710;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
-struct PolygonCollider2D_t7CEFFFEE6522175436B408712B052D236889C89E;
 struct Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F;
 struct String_t;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
@@ -46,7 +43,6 @@ struct ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801;
 struct ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7;
-struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -276,12 +272,6 @@ struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52  : public Behaviour_
 struct BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA  : public Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52
 {
 };
-struct EdgeCollider2D_tB7A39F2B1345894C40577A62FD62244702DE3710  : public Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52
-{
-};
-struct PolygonCollider2D_t7CEFFFEE6522175436B408712B052D236889C89E  : public Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52
-{
-};
 struct List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324_StaticFields
 {
 	RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* ___s_emptyArray;
@@ -428,38 +418,6 @@ struct ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949  : public 
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801 value)
-	{
-		m_Items[index] = value;
-	}
-};
-struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 m_Items[1];
-
-	inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 value)
 	{
 		m_Items[index] = value;
 	}
@@ -2163,38 +2121,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider2D_get_bounds_Injected_mB3F24D39
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F (EdgeCollider2D_tB7A39F2B1345894C40577A62FD62244702DE3710* __this, Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___0_value, const RuntimeMethod* method) 
-{
-	typedef void (*EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F_ftn) (EdgeCollider2D_tB7A39F2B1345894C40577A62FD62244702DE3710*, Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*);
-	static EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.EdgeCollider2D::set_points(UnityEngine.Vector2[])");
-	_il2cpp_icall_func(__this, ___0_value);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462 (PolygonCollider2D_t7CEFFFEE6522175436B408712B052D236889C89E* __this, Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___0_value, const RuntimeMethod* method) 
-{
-	typedef void (*PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462_ftn) (PolygonCollider2D_t7CEFFFEE6522175436B408712B052D236889C89E*, Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*);
-	static PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PolygonCollider2D::set_points(UnityEngine.Vector2[])");
-	_il2cpp_icall_func(__this, ___0_value);
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

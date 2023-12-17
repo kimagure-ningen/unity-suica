@@ -167,6 +167,7 @@ struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004;
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 struct Bloom_t0C806C947E1D104DC95E933B3FB9A307CBB5B225;
@@ -221,6 +222,7 @@ struct GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1;
 struct HDRACESPresetParameter_t9586D8EF5D8B6F14F16BFF618A17E21274FFAE45;
 struct HDRDebugViewPass_t1FC1B0F01FF5DBD18E7813E17D58C428B14800D1;
 struct HDROutputSettings_t6A590B1AA325DD7389D71F502B762BF1592A9F62;
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IDebugDisplaySettings_t3536F2A59DE9B5D8B53D685685024ED0DB26C438;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IndexOutOfRangeException_t7ECB35264FB6CA8FAA516BD958F4B2ADC78E8A82;
@@ -421,6 +423,7 @@ IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TaaPersistentData_t7AD3D320FD8FE7195225F0A7C7C676480A6ED775_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TemporalAA_t9495EEB5DEE3C075B518C9C516C63C1E61C6B662_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TransparentSettingsPass_t13490AAB630DED3A5EDF11A4F4D340B04E3B85B7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t114D43095CC4E03878798ED5A9513EA64ED9D96B_il2cpp_TypeInfo_var;
@@ -14941,6 +14944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalRenderer_CreateRenderGraphCamer
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RenderingUtils_t4E40200449A82FA3A172A563C490DF11FADA2BE1_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UniversalRenderer_t31019D4AD52F646128E0D1649E7B87E33BA36D8A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral16985650950622A65B420CFCE7644DFF91942ABB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3FD56F073048085B0B5A551F1A4E8F1DE3884574);
@@ -15169,6 +15173,7 @@ IL_013e:
 		L_42->___cameraColor = L_45;
 		RenderGraphFrameResources_tEDEEC063132763517D8F173BFDCADA2D646D450E* L_46 = __this->___frameResources;
 		TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09* L_47 = (TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09*)(&L_46->___cameraColor);
+		il2cpp_codegen_runtime_class_init_inline(TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09_il2cpp_TypeInfo_var);
 		bool L_48;
 		L_48 = TextureHandle_IsValid_m3C2D8F8EB70206A09F3FFADDDD230E00C25269D9(L_47, NULL);
 		if (!L_48)
@@ -15188,6 +15193,7 @@ IL_019a:
 	{
 		RenderGraphFrameResources_tEDEEC063132763517D8F173BFDCADA2D646D450E* L_51 = __this->___frameResources;
 		TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09* L_52 = (TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09*)(&L_51->___cameraDepth);
+		il2cpp_codegen_runtime_class_init_inline(TextureHandle_t87D7D063E5E22E38632961AB2B6F89978942BE09_il2cpp_TypeInfo_var);
 		bool L_53;
 		L_53 = TextureHandle_IsValid_m3C2D8F8EB70206A09F3FFADDDD230E00C25269D9(L_52, NULL);
 		if (!L_53)

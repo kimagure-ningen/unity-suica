@@ -3080,6 +3080,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Regex_IsMatch_m7E96E666FBE7259D7638A3A6A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Regex_UseOptionR_mFAB8780E9F998BE60C4B1127D57DD627A3B5629C (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Regex_IsMatch_mC358D80573E765ECC19F9F5882664E3B1FA0966E (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* __this, String_t* ___0_input, int32_t ___1_startat, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Match_tFBEBCF225BD8EA17BCE6CE3FE5C1BD8E3074105F* Regex_Match_mDF110993CAA26CD41AE9F5DB7F0C307B2680CED3 (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* __this, String_t* ___0_input, int32_t ___1_startat, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Regex_Replace_m6DCC34F103016E84A9DD25BADAC9133EF5613A09 (String_t* ___0_input, String_t* ___1_pattern, String_t* ___2_replacement, int32_t ___3_options, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___4_matchTimeout, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Regex_Replace_m8E802C10B5A591BEA61FC00EA8E4AF398D815A90 (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* __this, String_t* ___0_input, String_t* ___1_replacement, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Regex_Replace_mD86A837354847D86EC562069D67567F9F707C9C4 (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* __this, String_t* ___0_input, String_t* ___1_replacement, int32_t ___2_count, int32_t ___3_startat, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RegexReplacement_tCB8C00C0D40A46E57A81962B0F4A3C9081B79A3E* RegexReplacement_GetOrCreate_m2C3E8DB4E10AFC24D45D754E67E5C989F40455F1 (WeakReference_1_tDC6E83496181D1BAFA3B89CBC00BCD0B64450257* ___0_replRef, String_t* ___1_replacement, Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ___2_caps, int32_t ___3_capsize, Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ___4_capnames, int32_t ___5_roptions, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RegexReplacement_Replace_m54375FA094C20D81305C8DDC17AB973BF1B461F9 (RegexReplacement_tCB8C00C0D40A46E57A81962B0F4A3C9081B79A3E* __this, Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* ___0_regex, String_t* ___1_input, int32_t ___2_count, int32_t ___3_startat, const RuntimeMethod* method) ;
@@ -17303,6 +17305,46 @@ IL_000e:
 		int32_t L_5 = ___1_startat;
 		Match_tFBEBCF225BD8EA17BCE6CE3FE5C1BD8E3074105F* L_6;
 		L_6 = Regex_Run_m4DCD2202C599273C00D6052A77BDD2F39E2F5BF8(__this, (bool)0, (-1), L_2, 0, L_4, L_5, NULL);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Regex_Replace_m811FCA60D20059998EC547FC390F053C524D045D (String_t* ___0_input, String_t* ___1_pattern, String_t* ___2_replacement, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___0_input;
+		String_t* L_1 = ___1_pattern;
+		String_t* L_2 = ___2_replacement;
+		il2cpp_codegen_runtime_class_init_inline(Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var);
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_3 = ((Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_StaticFields*)il2cpp_codegen_static_fields_for(Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var))->___s_defaultMatchTimeout;
+		String_t* L_4;
+		L_4 = Regex_Replace_m6DCC34F103016E84A9DD25BADAC9133EF5613A09(L_0, L_1, L_2, 0, L_3, NULL);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Regex_Replace_m6DCC34F103016E84A9DD25BADAC9133EF5613A09 (String_t* ___0_input, String_t* ___1_pattern, String_t* ___2_replacement, int32_t ___3_options, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___4_matchTimeout, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___1_pattern;
+		int32_t L_1 = ___3_options;
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_2 = ___4_matchTimeout;
+		Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* L_3 = (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772*)il2cpp_codegen_object_new(Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var);
+		Regex__ctor_mA8EBF2F80CC00D741BFD2FFD7DC9DB26FBCEE2A4(L_3, L_0, L_1, L_2, (bool)1, NULL);
+		String_t* L_4 = ___0_input;
+		String_t* L_5 = ___2_replacement;
+		String_t* L_6;
+		L_6 = Regex_Replace_m8E802C10B5A591BEA61FC00EA8E4AF398D815A90(L_3, L_4, L_5, NULL);
 		return L_6;
 	}
 }

@@ -4190,6 +4190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidCastException__ctor_mED3F9781E6CA47A92C602C896EDDF2F40ECB8644 (InvalidCastException_t47FC62F21A3937E814D20381DDACEF240E95AC2E* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Convert_DefaultToType_m96EC48A7341F41CDC22A33461E9A8C1C60FB51EC (RuntimeObject* ___0_value, Type_t* ___1_targetType, RuntimeObject* ___2_provider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enum_InternalBoxEnum_m26E8D43A2A7D7C62F717BD31E8075601E4FC3268 (RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1* ___0_enumType, int64_t ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enum_TryParse_m9163F7ED940F4B41445F19BDBA208DA7C592165A (Type_t* ___0_enumType, String_t* ___1_value, bool ___2_ignoreCase, RuntimeObject** ___3_result, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueType__ctor_mDA580FD8FCE0C88CD65F178E6EE144E1531C26F8 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline (Exception_t* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationManager__ctor_mA0056A1EB04230A291DE1E28DE3012AFB9D28322 (SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* __this, const RuntimeMethod* method) ;
@@ -8305,6 +8306,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enum_TryParse_m9163F7ED940F4B41445F19BDB
 IL_0020:
 	{
 		return G_B2_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enum_TryParse_m181C95C283BAB5BAC27224F59FEB52F13F9D2A70 (Type_t* ___0_enumType, String_t* ___1_value, RuntimeObject** ___2_result, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t* L_0 = ___0_enumType;
+		String_t* L_1 = ___1_value;
+		RuntimeObject** L_2 = ___2_result;
+		il2cpp_codegen_runtime_class_init_inline(Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Enum_TryParse_m9163F7ED940F4B41445F19BDBA208DA7C592165A(L_0, L_1, (bool)0, L_2, NULL);
+		return L_3;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enum__ctor_m24EEF41BD8F0356D00680835E6EA8B8218850A62 (RuntimeObject* __this, const RuntimeMethod* method) 
