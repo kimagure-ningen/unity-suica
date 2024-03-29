@@ -74,3 +74,4 @@ crashlytics-build.properties
 # Rider setting files
 .idea/
 gamefile/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-15.dylib
+gamefile/Assets/_project/Fonts/NotoSansJP.asset
